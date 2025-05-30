@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Cores principais */
+  --background-default: #F5F4F0;
+  --border-primary: #D9D9D9;
+  --text-primary: #1B1B1B;
+  --text-secondary: #333333;
+  --text-tertiary: #696969;
+  --text-headline: #E1624F;
+  --accent-blue: #0C51A7;
+  --accent-orange: #E95E10;
+  --accent-pink: #E5245E;
+  --accent-purple: #591B98;
+
+  /* Tipografia */
+  --font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  --h1-size: 36px;
+  --h2-size: 32px;
+  --h3-size: 28px;
+  --headline-size: 16px;
+  --paragraph-size: 16px;
+  --subtitle-size: 16px;
+}
+
+body {
+  background: #232226;
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: var(--paragraph-size);
+  line-height: 1.6;
+}
+
+#page {
+  max-width: 1100px;
+  margin: 48px auto;
+  padding: 48px 48px 32px 48px;
+  background: var(--background-default);
+  border-radius: 32px;
+  border: none;
+  box-shadow: none;
+}
+
+img {
+  border-radius: 20px;
+  width: 100%;
+  display: block;
+  margin: 32px 0 16px 0;
+}
+
+main {
+  padding: 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 16px;
+  color: var(--text-tertiary);
+  font-weight: bold;
+  color: #1B1B1B;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+ul {
+  margin: 8px 0 24px 24px;
+  padding: 0;
+}
+
+li {
+  font-size: var(--paragraph-size);
+  color: var(--accent-orange);
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+li:nth-child(2) {
+  color: var(--accent-pink);
+}
+li:nth-child(3) {
+  color: var(--accent-blue);
+}
+
+footer {
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: 14px;
+  margin-top: 32px;
+  padding: 16px 0 0 0;
+}
+
+/* Destaques/accent */
+#about h3,
+#places h3 {
+  color: var(--text-headline);
+  font-size: var(--headline-size);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* Cards de imagem */
+#cards {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0;
+}
+.card {
+  flex: 1;
+  background: var(--background-default);
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section#final {
+  margin-top: 32px;
+  text-align: center;
+  border-top: 2px solid var(--border-primary);
+  padding-top: 32px;
+}
+
+/* Separador sutil */
+section + section {
+  border-top: 2px solid var(--border-primary);
+  padding-top: 32px;
+}
+
+#about {
+  text-align: center;
+}
+
+
+
